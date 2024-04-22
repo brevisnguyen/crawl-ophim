@@ -154,7 +154,7 @@ function crawl_ophim_page()
 
 	if(count($sourcePage->items) > 0) {
 		foreach ($sourcePage->items as $key => $item) {
-			array_push($listMovies, "https://ophim.tv/phim/{$item->slug}|{$item->_id}|{$item->modified->time}|{$item->name}|{$item->origin_name}|{$item->year}");
+			array_push($listMovies, "https://ophim1.com/phim/{$item->slug}|{$item->_id}|{$item->modified->time}|{$item->name}|{$item->origin_name}|{$item->year}");
 		}
 		echo join("\n", $listMovies);
 	} else {
